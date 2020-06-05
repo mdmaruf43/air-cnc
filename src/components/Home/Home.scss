@@ -1,0 +1,64 @@
+%formStyle{
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+
+.home{
+    margin-top: 5%;
+}
+
+.form{
+    @extend %formStyle;
+    label{
+        font-weight: bolder;
+        input{
+            border: none;
+            width: 300px;
+        }
+    }    
+}
+.date{
+   @extend %formStyle;
+    label{
+        font-weight: bolder;
+        input{
+            border: none;
+            width: 160px;
+        }
+    }    
+}
+
+.counter{
+    input{        
+    width: 60px;
+    }
+    button{
+        border: none;
+        background-color: transparent;
+        font-size: 17px;
+    }
+}
+
+.smallStyle{
+    h4{
+        margin: 0;
+        padding: 0;
+    }
+
+    small{
+        color: lightgray;
+    }
+}
+
+
+
+.right-side{
+    margin-left: 5%;
+    h3{
+        margin-top: 25%;
+    }
+}
