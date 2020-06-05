@@ -1,0 +1,36 @@
+.topImage{
+    img{
+        height: 600px;
+        width: 110%;
+    }
+}
+
+.selftImage{
+    img{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }
+    h6{
+        text-align: center;
+    }
+}
+
+.apartment{
+    margin-top: 10%;
+    border-bottom: 1px solid gainsboro;
+}
+
+.Home-condition{
+    margin-top: 5%;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 10%;
+}
+
+.rating{
+    color: gold;
+}
+
+.form2{
+    padding: 50px;
+}
