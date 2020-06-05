@@ -8,6 +8,7 @@ import NotFound from './Component/NotFound/NotFound';
 import ReviewHouse from './Component/ReviewHouse/ReviewHouse';
 import Coming from './Component/Coming/Coming';
 import Confirm from './Component/Confirm/Confirm';
+import GoogleMaps from './Component/GoogleMap/GoogleMap';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/confirm">
           <Confirm />
+        </Route>
+        <Route path="/maps">
+          <GoogleMaps />
         </Route>
         <Route path="*">
           <NotFound/>
