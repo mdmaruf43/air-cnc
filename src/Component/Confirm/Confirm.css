@@ -1,0 +1,47 @@
+.bgColor {
+    background-color: #eaeaea;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.btn1 {
+    background-color: #2BDE8C;
+    width: 210px;
+    height: 57px;
+    color: #fff;
+    border: 0px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+}
+
+#imgMegerment{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.textDark {
+    font-weight: 600;
+}
+
+.boxShadow {
+    box-shadow: 0 4px 3px rgba(0,0,0,0.09), 0 2px 2px rgba(0,0,0,0.08);
+}
+
+.fontSize1 {
+    font-weight: 600;
+}
+
+.textColor {
+    color: #ccc;
+}
+
+.bgCo {
+    color: #2BDE8C;
+}
+
+.imgCircle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
