@@ -104,7 +104,7 @@ const ApartDetails = () => {
                             <h6>Total</h6>
                             <h6>$167</h6>                            
                         </div>
-                        <button className="btn btn-success form-control"> Reserve</button>
+                        <button className="btn btn-success form-control"> <a style={{textDecoration: 'none', color: '#fff'}} href="/review">Reserve</a> </button>
                         <br/>
                         <h6 className="text-center">You wont'be charged yet</h6>
                     </div>

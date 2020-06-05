@@ -9,16 +9,32 @@ import ReviewHouse from './Component/ReviewHouse/ReviewHouse';
 import Coming from './Component/Coming/Coming';
 import Confirm from './Component/Confirm/Confirm';
 import GoogleMaps from './Component/GoogleMap/GoogleMap';
+import Home from './Component/Home/Home';
+import Navbar from './Component/Navbar/Navbar';
+import ApartDetails from './Component/ApartDetails/ApartDetails';
+import Login from './Component/Login/Login';
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route path="/review">
           <ReviewHouse />
+        </Route>
+        <Route exact path="/">
+          <Navbar></Navbar>
+          <Home></Home>
+        </Route>
+        <Route path="/login">
+          <Navbar></Navbar>
+          <Login></Login>
         </Route>
         <Route path="/coming">
           <Coming />
+        </Route>
+        <Route path="/home">
+          <Navbar></Navbar>
+          <ApartDetails></ApartDetails>
         </Route>
         <Route path="/confirm">
           <Confirm />

@@ -19,7 +19,7 @@ const Navbar = () => {
                             <a className="nav-link" href="/experiance">Host your experiance</a>
                         </li>
                         <li className="nav-item ">
-                            <a className="nav-link" href="/help">Help</a>
+                            <a className="nav-link" href="/maps">Maps</a>
                         </li>
                         <li className="nav-item ">
                             <a className="nav-link" href="/login">Log in</a>

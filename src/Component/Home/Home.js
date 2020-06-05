@@ -92,15 +92,14 @@ const Home = () => {
                     </div>
 
                     <div className="form">
-                        <button className="btn btn-success form-control"><FaSearchLocation /> Search</button>
+                        <a href="/maps">
+                        <button className="btn btn-success form-control">  <FaSearchLocation /> Search </button></a>
                     </div>
                 </div>
 
                 {
                     experiences.map(info => <Card key={info.id} entertainment={info}></Card>)
                 }
-
-
 
             </div>
         </div>

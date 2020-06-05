@@ -6,7 +6,7 @@ import { AiTwotoneStar } from 'react-icons/ai';
 const Card = (props) => {
     console.log(props);
 
-    const { id, title, address, rent, rating, Image } = props.entertainment;
+    const { title, address, rent, rating, Image } = props.entertainment;
     return (
         <div className="col-md-2">
             <div className="cardStyle">
