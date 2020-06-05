@@ -9,16 +9,19 @@ import {
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import ApartDetails from './components/ApartDetails/ApartDetails';
+import Login from './components/Login/Login';
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route path="/home">
-        <Navbar></Navbar>
-        <ApartDetails></ApartDetails>
+          <Navbar></Navbar>
+          <ApartDetails></ApartDetails>
         </Route>
-        <Route path="/users">
+        <Route path="/login">
+          <Navbar></Navbar>
+          <Login></Login>
         </Route>
         <Route path="/">
           <Navbar></Navbar>
