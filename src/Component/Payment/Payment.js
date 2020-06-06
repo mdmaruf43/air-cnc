@@ -4,6 +4,7 @@ import masterCard from '../../Images/credit-cards_mastercard.png'
 import visaCard from '../../Images/credit-cards_visa.png'
 import anotherCard from '../../Images/credit-cards_amex.png';
 import paypal from '../../Images/Bitmap.png'
+
 function Payment() {
     return (
         <div className="container pt-2">
@@ -29,12 +30,10 @@ function Payment() {
                             </div>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label for="cardNumber">Card Number</label>
                         <input type="number" class="form-control" id="cardNumber" placeholder="0000 0000 0000 0000"/>
                     </div>
-
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputCity">NAME ON CARD</label>

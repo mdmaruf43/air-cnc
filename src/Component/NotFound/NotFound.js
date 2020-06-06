@@ -1,8 +1,6 @@
 import React from 'react'
 import './NotFound.css'
-import {
-    Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NotFound() {
     return (
@@ -10,7 +8,6 @@ function NotFound() {
             <Link to="/">
                 <h3>Back to Homepage</h3>
             </Link>
-            
         </div>
     )
 }

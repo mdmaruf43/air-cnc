@@ -4,8 +4,6 @@ import { AiTwotoneStar } from 'react-icons/ai';
 
 
 const Card = (props) => {
-    console.log(props);
-
     const { title, address, rent, rating, Image } = props.entertainment;
     return (
         <div className="col-md-2">
@@ -17,7 +15,6 @@ const Card = (props) => {
                     <p>${rent} per person</p>
                     <small><span className="rating"><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /><AiTwotoneStar /> </span>{rating}</small>
                 </div>
-
             </div>
         </div>
     );

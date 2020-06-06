@@ -18,7 +18,6 @@ const ApartDetails = () => {
                     <img src={image2} alt="" />
                 </div>
             </div>
-
             <div className="row">
                 <div className="col-md-6">
                     <div className="d-flex justify-content-center align-items-center apartment">
@@ -31,7 +30,6 @@ const ApartDetails = () => {
                             <img src={self} alt="" />
                             <h6>Rowdra</h6>
                         </div>
-
                     </div>
                     <div className="Home-condition">
                         <div>
@@ -51,7 +49,6 @@ const ApartDetails = () => {
                             <h6>Superhosts are experienced, highly rated hosts who are commited to providing great stays for guests.</h6>
                         </div>
                     </div>
-
                     <div className="Home-condition">
                         <div>
                             <h6>
@@ -61,12 +58,10 @@ const ApartDetails = () => {
                             </h6>
                         </div>
                     </div>
-
                     <div>
                         <h4>Reviews</h4>
                         <h5><span className="rating"><AiTwotoneStar /></span> 4.9 (20 Reviews)</h5>
                     </div>
-
                 </div>
                 <div className="col-md-6 apartment">
                     <div className="form form2">
@@ -110,7 +105,6 @@ const ApartDetails = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

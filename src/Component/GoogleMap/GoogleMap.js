@@ -76,10 +76,8 @@ function GoogleMaps() {
                 ⛺️
                 </span>
             </h1>
-
             <Locate panTo={panTo} />
             <Search panTo={panTo} />
-
             <GoogleMap
                 id="map"
                 mapContainerStyle={mapContainerStyle}
@@ -98,7 +96,6 @@ function GoogleMaps() {
                     }}
                 />
                 ))}
-
                 {selected ? (
                 <InfoWindow
                     position={{ lat: selected.lat, lng: selected.lng }}
@@ -158,8 +155,6 @@ function Search({ panTo }) {
             radius: 100 * 1000,
         },
     });
-
-    // https://developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service#AutocompletionRequest
 
     const handleInput = (e) => {
         setValue(e.target.value);
