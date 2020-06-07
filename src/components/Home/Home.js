@@ -31,12 +31,49 @@ const Home = () => {
     ])
 
 
+    const [adults, setAdults] = useState(0);
+    const [child, setChild] = useState(0);
+    const [babies, setBabies] = useState(0);
+  
+    const adultMinus = () => {
+        setAdults(adults - 1);
+    }
+
+    const adultPlus = () => {
+        setAdults(adults + 1);
+    }
+
+    const childMinus = () => {
+        setChild(child - 1);
+    }
+
+    const childPlus = () => {
+        setChild(child + 1);
+    }
+
+    const babiesMinus = () => {
+        setBabies(babies - 1);
+    }
+
+    const babiesPlus = () => {
+        setBabies(babies + 1);
+    }
+
+
+    const [guestAdult, setGuestAdult] = useState(0);
+    const [guestChild, setGuestChild] = useState(0);
+
+    const guestHandle=()=>{
+        setGuestAdult(adults);
+        setGuestChild(child);
+    }
+
 
     return (
         <div className="container home">
             <div className="row">
                 <div className="col-md-4">
-                    <h3>Where do you want to go?</h3>                    
+                    <h3>Where do you want to go?</h3>
                     <div className="form">
                         <label htmlFor="location">Location
                             <input className="form-control" type="text" name="location" placeholder="Add city, Landmark, or address" />
@@ -54,7 +91,7 @@ const Home = () => {
 
                     <div className="form">
                         <label htmlFor="guests">Guests
-                            <input className="form-control" type="text" name="location" placeholder="Guests Here" readonly="true" />
+                            <input value={guestAdult+" Adults "+guestChild+" Child"} className="form-control" type="text" name="location" placeholder="Guests Here" readonly="true" />
                         </label>
                     </div>
 
@@ -64,7 +101,7 @@ const Home = () => {
                                 <h4 >ADULTS</h4>
                             </div>
                             <div className="d-flex align-items-center counter">
-                                <button><AiOutlineMinus /></button><input className="form-control field" type="text" /><button><AiOutlinePlus /></button>
+                                <button onClick={adultMinus}><AiOutlineMinus /></button><input className="form-control field text-center" type="text" value={adults} /><button onClick={adultPlus}><AiOutlinePlus /></button>
                             </div>
                         </div>
                         <div className="d-flex justify-content-between align-items-center">
@@ -73,7 +110,7 @@ const Home = () => {
                                 <small>Age 2 - 12</small>
                             </div>
                             <div className="d-flex align-items-center counter">
-                                <button><AiOutlineMinus /></button><input className="form-control field" type="text" /><button><AiOutlinePlus /></button>
+                                <button onClick={childMinus}><AiOutlineMinus /></button><input className="form-control field text-center" value={child} type="text" /><button onClick={childPlus}><AiOutlinePlus /></button>
                             </div>
                         </div>
                         <div className="d-flex justify-content-between align-items-center">
@@ -82,26 +119,22 @@ const Home = () => {
                                 <small>Younger than 2</small>
                             </div>
                             <div className="d-flex align-items-center counter">
-                                <button><AiOutlineMinus /></button><input className="form-control field" type="text" /><button><AiOutlinePlus /></button>
+                                <button onClick={babiesMinus}><AiOutlineMinus /></button><input className="form-control field text-center" type="text" value={babies} /><button onClick={babiesPlus}><AiOutlinePlus /></button>
                             </div>
                         </div>
 
                         <div className="d-flex justify-content-end" >
-                            <button className="btn btn-outline-success" >APPLY</button>
+                            <button onClick={guestHandle} className="btn btn-outline-success" >APPLY</button>
                         </div>
                     </div>
 
                     <div className="form">
-                        <button className="btn btn-success form-control"><FaSearchLocation /> Search</button>
+                        <a href="/maps"><button className="btn btn-success form-control"><FaSearchLocation /> Search</button></a>
                     </div>
                 </div>
-
                 {
                     experiences.map(info => <Card key={info.id} entertainment={info}></Card>)
                 }
-
-
-
             </div>
         </div>
     );
