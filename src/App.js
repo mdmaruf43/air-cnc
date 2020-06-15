@@ -22,19 +22,19 @@ function App() {
           <ReviewHouse />
         </Route>
         <Route exact path="/">
-          <Navbar></Navbar>
-          <Home></Home>
+          <Navbar />
+          <Home />
         </Route>
         <Route path="/login">
-          <Navbar></Navbar>
-          <Login></Login>
+          <Navbar />
+          <Login />
         </Route>
         <Route path="/coming">
           <Coming />
         </Route>
         <Route path="/home">
-          <Navbar></Navbar>
-          <ApartDetails></ApartDetails>
+          <Navbar />
+          <ApartDetails />
         </Route>
         <Route path="/confirm">
           <Confirm />
